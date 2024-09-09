@@ -1,0 +1,68 @@
+$btn-primary: #8fbd64;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+main {
+    background: linear-gradient(to bottom, gray, white);
+}
+
+header {
+    height: 50rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white; /* Přidání bílé barvy textu pro lepší čitelnost */
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.5; /* Můžete upravit podle potřeby */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Poloprůhledný překryv pro lepší čitelnost textu */
+    z-index: 2;
+}
+
+.header-content {
+    position: relative;
+    z-index: 3;
+    padding: 100px 0; /* Přidání odsazení pro vertikální zarovnání */
+}
+
+.navbar {
+    z-index: 4; /* Zajištění, že navigační panel je nad obrázkem a překryvem */
+}
+
+span {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.bg-dark-transparent {
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.7
+    ); /* Nastavte alfa kanál podle potřeby */
+}
+
+h1 {
+    font-size: 5rem;
+}
